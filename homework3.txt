@@ -1,0 +1,53 @@
+ÖDEV TANIMI:
+Aşağıdaki konuları araştırıp not alarak notlarınızı arkadaşlarınızla bu ödevin yorum kısmında paylaşınız;
+HTML
+HTML Locators
+Selenium'da aksiyonlar (send_keys, click vb..)
+
+HTML(HYPER TEXT MARKUP LANGUAGE)
+-Bir dizi ogeden oluşur.
+-Web sayfaları oluşturmak için kullanılan standart biçimlendirme dilidir.
+-Bir programlama dili değildir.
+-HTML kodlarıyla kendi başına çalışan bir program yazılamaz.Ancak bu dili yorumlayabilen programlar aracılığıyla çalışan programlar yazılabilir.
+-Küçüktür ve büyüktür işaretleri arasına yazılan HTML komutları kullanılarak yazılır (ör: <html>).
+-İşaretlenen metnin başını ve sonunu belirtmek için çoğunlukla çift olarak kullanılırlar (Örnek: <h1>Selam</h1>)
+Ancak, işaretlemek yerine metnin bir yerine bir işaret konacaksa tek olarak da kullanılabilirler (Ör: <img>).
+(ID Name, ClassName, TagName, LinkText, CssSelector, XPath)
+
+HTML LOCATORS
+-Web sayfalarındaki öGeleri (element) bulmak için kullanılan bir yöntemdir.Bu ögeler,HTML sayfalarında tanımlanan farklı tags ve attributes tarafından tanımlanır.
+-Selenium vb. web otomasyon araçlarında yaygın olarak kullanılır.Bu araçlar, web sayfalarında belirli öğeleri bulmak ve üzerlerinde işlem yapmak için HTML Locators'ları kullanır.
+-Ogeleri bulmak için belirli attributes ve içerikleri kullanabilir.Örneğin,"id","class","name","href","value","type".
+HTML Locators'ların kullanımı,web otomasyon testleri için önemlidir.Çünkü doğru şekilde kullanıldığında, web sayfasındaki öğeleri hızlı ve doğru bir şekilde bulmaya yardımcı olabilir
+ve test otomasyon sürecini daha verimli hale getirebilir.
+
+SELENIUM'DA AKSİYONLAR 
+Selenium,web sayfaları üzerinde farklı aksiyonları gerçekleştirmek için kullanılan bir test otomasyon aracıdır.Bu aksiyonlar,web sayfalarındaki öğeleri bulmak ve üzerlerinde etkileşimde bulunmak için kullanılır.
+
+1)send_keys()=Bir metin kutusuna yazı yazmak veya bir düğmeye klavyeden bir tuş göndermek için kullanılır.Örneğin,bir metin kutusuna "Merhaba Dünya" yazmak için aşağıdaki kod kullanılabilir:
+element = driver.find_element_by_id("myTextbox")
+element.send_keys("Merhaba Dünya")
+
+2) click()=Bir ögeye(düğme, bağlantı vb.) tıklamak için kullanılır. Örneğin,bir düğmeye tıklamak için:
+element = driver.find_element_by_id("myTextbox")
+element.click()
+
+3) clear()= Bir metin kutusundaki mevcut metni silmek için kullanılır. Örneğin, bir metin kutusundaki mevcut metni silmek için aşağıdaki kod kullanılabilir:+
+
+4) submit()=Bir formu göndermek için kullanılır.Formdaki"submit"düğmesine tıklamadan veya Enter tuşuna basmadan önce kullanılabilir. Örneğin bir formu göndermek için:
+element = driver.find_element_by_id("myForm")
+element.submit()
+
+5) select_by_visible_text()=Bir açılır kutudan seçenek seçmek için kullanılır.Seçenekleri açılır kutudan görülebilen metinleri kullanarak seçer. Örneğin, bir açılır kutudan "Ankara" seçmek için aşağıdaki kod kullanılabilir: 
+from selenium.webdriver.supportui import Select
+element = driver.find_element_by_id("myDropdown")
+select = Select(element)
+select.select_by_visible_text("Ankara")
+
+6) find_element_by =Web sitesindeki bir ögeyi bulmak için kullanılır.  
+7) get() =Bu aksiyon, URL'ye gitmek için kullanılır.
+8) maximize_window() => Tarayıcı penceresini tam ekran yapmak için kullanılır.         
+9) scroll () =Sayfayı aşağı yukarı kaydırmak için kullanılır.
+10)Back=Önceki sayfaya geçmek için kullanılır.
+11)Forward=Sonraki sayfaya geçmek için kullanılır.
+12)Refresh=Sayfayı yenilemek için kullanılır.
